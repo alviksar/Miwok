@@ -1,3 +1,5 @@
+package com.example.android.miwok;
+
 /**
  * Created by sav on 26.09.2017.
  */
