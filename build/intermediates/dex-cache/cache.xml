@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        is-multidex="false"
+        jar="C:\Users\sav\.android\build-cache\3aa9fab8023ed3dcee22c581740b53f5173f8a19\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="a0b5d60246cd9d4f3f2443611b3b4c25265840b5">
+        <dex dex="D:\_Study\Miwok\app\build\intermediates\pre-dexed\debug\classes_d56cf24202a3dd4a712585ce2116861c53511e24.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\sav\.android\build-cache\c4c1cadeda5f2da6f67f627d2bb330c34ddd2773\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="debf30ce0a7560396b6235edef77e447006454c2">
+        <dex dex="D:\_Study\Miwok\app\build\intermediates\pre-dexed\debug\classes_cb96b9bd58b46511be175a37c1ec100960fbeea8.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\sav\.android\build-cache\a31da6e45dad93b0e28b75650d82b2afc727e22c\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="23be6993826b8fd88bbc8d14928bb3b8960d3d4e">
+        <dex dex="D:\_Study\Miwok\app\build\intermediates\pre-dexed\debug\classes_1e5b67d3511088a3648105106160d19fa4057ef3.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\sav\.android\build-cache\58e2f148443094d9d8a0a1523f8efc0bdd8140a1\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="44ee06abb66da30f5855e6bf54574e64cdcd982a">
+        <dex dex="D:\_Study\Miwok\app\build\intermediates\pre-dexed\debug\classes_2a55b05a2c5a4399e452733c5d666674e37bdd1b.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\sav\AppData\Local\Android\sdk\extras\android\m2repository\com\android\support\support-annotations\23.3.0\support-annotations-23.3.0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="db7791d75a07fef9844d06236c1c59ba7bf6997c">
+        <dex dex="D:\_Study\Miwok\app\build\intermediates\pre-dexed\debug\support-annotations-23.3.0_1091ab6b2354dc3ef65c239878948f36eba73101.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\sav\.android\build-cache\2874235b23ca318298436e3a150c7479280a0b89\output\jars\libs\internal_impl-23.3.0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="4da5a4d697d32497c6f85567a5112e62fdfd0676">
+        <dex dex="D:\_Study\Miwok\app\build\intermediates\pre-dexed\debug\internal_impl-23.3.0_1614f33d0d55c30f9055f6013fcdb03a1a4f7fe0.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\sav\.android\build-cache\c3cdbb87d4d1a2915c376f57f42ddf9fcc64c73c\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="f0001e71cea6ae432a00021c6f727f5ef0f3d27e">
+        <dex dex="D:\_Study\Miwok\app\build\intermediates\pre-dexed\debug\classes_6c2f1e21bb5e4b253c12fb6ff4511b26fc8d0431.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\sav\.android\build-cache\d2ccbf83ba9d6059b93122dc9a9921d7608a52b1\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="1b8e03daaa43fb0a4cd57e378167c2fd70454c1e">
+        <dex dex="D:\_Study\Miwok\app\build\intermediates\pre-dexed\debug\classes_5c0efbafafdb0298b5eab595b852be3da0941b58.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\sav\.android\build-cache\2874235b23ca318298436e3a150c7479280a0b89\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="8a034dd16c0dfd75fe86c52c2cd581592acc684a">
+        <dex dex="D:\_Study\Miwok\app\build\intermediates\pre-dexed\debug\classes_9fb749448a56ec4e69a63f415ce2e2f6ea76450e.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\sav\AppData\Local\Android\sdk\extras\m2repository\com\android\support\constraint\constraint-layout-solver\1.0.2\constraint-layout-solver-1.0.2.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="b9cd8fc6bd15cb915735d34535db30ece0c44603">
+        <dex dex="D:\_Study\Miwok\app\build\intermediates\pre-dexed\debug\constraint-layout-solver-1.0.2_e43e73d84aff05910361d2d5ccacfc6725c8f720.jar" />
+    </item>
+
+</items>
