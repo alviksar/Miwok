@@ -44,9 +44,7 @@ public class Word {
         return mDefaultWord;
     }
 
-    public int getImageResourceId() {
-        return mImageResourceId;
-    }
+    public int getImageResourceId() { return mImageResourceId; }
 
     /**
      * Returns whether or not there is an image for this word.
