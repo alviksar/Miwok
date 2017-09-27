@@ -5,19 +5,24 @@ package com.example.android.miwok;
  */
 
 public class Word {
-    private String miwokWord;
-    private String defaultWord;
+    private String mMiwokWord;
+    private String mDefaultWord;
+    private int mImageId;
 
     public Word(String defaultWord, String miwokWord) {
-        this.miwokWord = miwokWord;
-        this.defaultWord = defaultWord;
+        this.mMiwokWord = miwokWord;
+        this.mDefaultWord = defaultWord;
     }
 
     public String getMiwokWord() {
-        return miwokWord;
+        return mMiwokWord;
     }
 
     public String getDefaultWord() {
-        return defaultWord;
+        return mDefaultWord;
+    }
+
+    public int getImageId() {
+        return mImageId;
     }
 }
