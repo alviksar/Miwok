@@ -9,9 +9,15 @@ public class Word {
     private String mDefaultWord;
     private int mImageId;
 
-    public Word(String defaultWord, String miwokWord) {
+    public Word(String defaultWord, String miwokWord)
+    {
+        this(defaultWord, miwokWord, 0);
+    }
+
+    public Word(String defaultWord, String miwokWord, int imageId) {
         this.mMiwokWord = miwokWord;
         this.mDefaultWord = defaultWord;
+        this.mImageId = imageId;
     }
 
     public String getMiwokWord() {
