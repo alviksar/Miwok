@@ -1,6 +1,7 @@
 package com.example.android.miwok;
 
 import android.content.Intent;
+import android.media.MediaPlayer;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
@@ -61,7 +62,9 @@ public class NumbersActivity extends AppCompatActivity {
             @Override
             public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
                 Word word = (Word) adapterView.getItemAtPosition(i);
-                Toast.makeText(getBaseContext(), word.getMiwokWord(),Toast.LENGTH_SHORT).show();
+                MediaPlayer mediaPlayer = MediaPlayer.create(getApplicationContext(), R.raw.number_one);
+                mediaPlayer.start(); // no need to call prepare(); create() does that for you
+             //   Toast.makeText(getBaseContext(), word.getMiwokWord(),Toast.LENGTH_SHORT).show();
             }
         });
 
