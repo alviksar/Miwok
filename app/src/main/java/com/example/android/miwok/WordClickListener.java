@@ -16,6 +16,16 @@ import static android.R.attr.button;
 public class WordClickListener implements ListView.OnItemClickListener {
 
     private MediaPlayer mMediaPlayer;
+    private MediaPlayer.OnCompletionListener onCompletionListener = new MediaPlayer.OnCompletionListener() {
+        //            Word mWord = new Word("Test", "Text", 0);
+        @Override
+        public void onCompletion(MediaPlayer mediaPlayer) {
+            // Toast.makeText(mContext, mWord.getMiwokWord(), Toast.LENGTH_SHORT).show();
+            mediaPlayer.release();
+            mediaPlayer = null;
+        }
+    };
+
     private Context mContext;
 
     public WordClickListener(Context context) {
@@ -29,15 +39,7 @@ public class WordClickListener implements ListView.OnItemClickListener {
         mMediaPlayer.start(); // no need to call prepare(); create() does that for you
       //  mMediaPlayer.release();
       //  mMediaPlayer = null;
-        mMediaPlayer.setOnCompletionListener(new MediaPlayer.OnCompletionListener() {
-//            Word mWord = new Word("Test", "Text", 0);
-            @Override
-            public void onCompletion(MediaPlayer mediaPlayer) {
-               // Toast.makeText(mContext, mWord.getMiwokWord(), Toast.LENGTH_SHORT).show();
-                mediaPlayer.release();
-                mediaPlayer = null;
-            }
-        });
+        mMediaPlayer.setOnCompletionListener(onCompletionListener);
     }
 
     //  button.setOnClickListener(new CustomClickListener(context));
