@@ -1,8 +1,13 @@
 package com.example.android.miwok;
 
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.view.View;
+import android.widget.AdapterView;
 import android.widget.ListView;
+import android.widget.TextView;
+import android.widget.Toast;
 
 import java.util.ArrayList;
 
@@ -51,6 +56,14 @@ public class NumbersActivity extends AppCompatActivity {
             rootView.addView(wordView);
         }
         */
-     
+
+        listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+            @Override
+            public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
+                Word word = (Word) adapterView.getItemAtPosition(i);
+                Toast.makeText(getBaseContext(), word.getMiwokWord(),Toast.LENGTH_SHORT).show();
+            }
+        });
+
      }
 }
