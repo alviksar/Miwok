@@ -39,4 +39,10 @@ public class ColorsActivity extends AppCompatActivity {
         listView.setAdapter(adapter);
         listView.setOnItemClickListener(new WordClickListener(ColorsActivity.this));
     }
+
+    @Override
+    protected void onStop() {
+        super.onStop();
+        WordAudioPlayer.releaseMediaPlayer();
+    }
 }

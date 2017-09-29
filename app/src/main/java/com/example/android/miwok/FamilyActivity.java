@@ -46,4 +46,10 @@ public class FamilyActivity extends AppCompatActivity {
         listView.setAdapter(adapter);
         listView.setOnItemClickListener(new WordClickListener(FamilyActivity.this));
     }
+
+    @Override
+    protected void onStop() {
+        super.onStop();
+        WordAudioPlayer.releaseMediaPlayer();
+    }
 }

@@ -42,4 +42,10 @@ public class PhrasesActivity extends AppCompatActivity {
         listView.setAdapter(adapter);
         listView.setOnItemClickListener(new WordClickListener(PhrasesActivity.this));
     }
+
+    @Override
+    protected void onStop() {
+        super.onStop();
+        WordAudioPlayer.releaseMediaPlayer();
+    }
 }

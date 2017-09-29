@@ -1,11 +1,14 @@
 package com.example.android.miwok;
 
 import android.content.Context;
+import android.content.res.AssetFileDescriptor;
 import android.media.MediaPlayer;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ListView;
 import android.widget.Toast;
+
+import java.io.IOException;
 
 import static android.R.attr.button;
 
@@ -15,7 +18,9 @@ import static android.R.attr.button;
 
 public class WordClickListener implements ListView.OnItemClickListener {
 
-    private MediaPlayer mMediaPlayer;
+    //
+    // MediaPlayer mMediaPlayer;
+
     private MediaPlayer.OnCompletionListener onCompletionListener = new MediaPlayer.OnCompletionListener() {
         //            Word mWord = new Word("Test", "Text", 0);
         @Override
@@ -29,17 +34,14 @@ public class WordClickListener implements ListView.OnItemClickListener {
     private Context mContext;
 
     public WordClickListener(Context context) {
+      //  mMediaPlayer = mediaPlayer;
         this.mContext = context;
     }
 
     @Override
     public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
         Word word = (Word) adapterView.getItemAtPosition(i);
-        mMediaPlayer = MediaPlayer.create(mContext, word.getAudioResourceId());
-        mMediaPlayer.start(); // no need to call prepare(); create() does that for you
-      //  mMediaPlayer.release();
-      //  mMediaPlayer = null;
-        mMediaPlayer.setOnCompletionListener(onCompletionListener);
+        WordAudioPlayer.playWord(mContext, word);
     }
 
     //  button.setOnClickListener(new CustomClickListener(context));

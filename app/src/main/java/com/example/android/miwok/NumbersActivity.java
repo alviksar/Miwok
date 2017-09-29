@@ -1,20 +1,12 @@
 package com.example.android.miwok;
 
-import android.content.Intent;
-import android.media.MediaPlayer;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
-import android.view.View;
-import android.widget.AdapterView;
 import android.widget.ListView;
-import android.widget.TextView;
-import android.widget.Toast;
 
 import java.util.ArrayList;
 
 public class NumbersActivity extends AppCompatActivity {
-
-    private MediaPlayer mMediaPlayer;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -61,8 +53,7 @@ public class NumbersActivity extends AppCompatActivity {
         }
         */
 
-
-/*
+        /*
         listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
@@ -72,6 +63,12 @@ public class NumbersActivity extends AppCompatActivity {
              //   Toast.makeText(NumbersActivity.this, word.getMiwokWord(),Toast.LENGTH_SHORT).show();
             }
         });
-*/
+    */
      }
+
+    @Override
+    protected void onStop() {
+        super.onStop();
+        WordAudioPlayer.releaseMediaPlayer();
+    }
 }
