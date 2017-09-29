@@ -9,7 +9,7 @@ import java.io.IOException;
  * Created by sav on 29.09.2017.
  */
 
-public final class WordAudioPlayer {
+public class WordAudioPlayer {
 
     private static MediaPlayer mMediaPlayer;
 
@@ -22,7 +22,7 @@ public final class WordAudioPlayer {
     };
 
     public static void playWord(Context context, Word word) {
-        if (mMediaPlayer != null) mMediaPlayer.release();
+        releaseMediaPlayer();
         mMediaPlayer = MediaPlayer.create(context, word.getAudioResourceId());
         mMediaPlayer.start(); // no need to call prepare(); create() does that for you
         mMediaPlayer.setOnCompletionListener(onCompletionListener);
