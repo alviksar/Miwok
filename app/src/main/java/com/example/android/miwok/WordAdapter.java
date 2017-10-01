@@ -51,15 +51,15 @@ public class WordAdapter extends ArrayAdapter<Word> {
                     R.layout.list_item, parent, false);
 
             int color = ContextCompat.getColor(getContext(), mBackgroundColor);
-            listItemView.findViewById(R.id.text_layout).setBackgroundColor(color);
+            listItemView.findViewById(R.id.text_container).setBackgroundColor(color);
 
         }
         // Get the object located at this position in the list
         Word currentWord = getItem(position);
 
         // Find TextView in the list_item.xml layout
-        TextView miwokWordView = (TextView) listItemView.findViewById(R.id.miwok_word_view);
-        TextView defaultWordView = (TextView) listItemView.findViewById(R.id.default_word_view);
+        TextView miwokWordView = (TextView) listItemView.findViewById(R.id.miwok_text_view);
+        TextView defaultWordView = (TextView) listItemView.findViewById(R.id.default_text_view);
 
         // Set text on the TextView
         miwokWordView.setText(currentWord.getMiwokWord());

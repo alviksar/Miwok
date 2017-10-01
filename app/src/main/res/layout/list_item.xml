@@ -14,30 +14,34 @@
      limitations under the License.
 -->
 <!-- Layout for a single list item -->
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="wrap_content"
+    android:layout_height="@dimen/list_item_height"
     android:background="@color/tan_background"
-    android:minHeight="@dimen/list_item_height"
-    android:orientation="horizontal">
+    android:minHeight="@dimen/list_item_height">
 
     <ImageView
         android:id="@+id/image4word"
         android:layout_width="@dimen/list_item_height"
         android:layout_height="@dimen/list_item_height" />
 
-    <LinearLayout
-        android:id="@+id/text_layout"
+    <RelativeLayout
+        android:id="@+id/text_container"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_height="@dimen/list_item_height"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_toRightOf="@id/image4word"
         android:orientation="vertical"
         android:paddingLeft="16dp">
 
         <TextView
-            android:id="@+id/miwok_word_view"
+            android:id="@+id/miwok_text_view"
             android:layout_width="match_parent"
-            android:layout_height="0dp"
+            android:layout_height="44dp"
             android:layout_weight="1"
             android:gravity="bottom"
             android:textAppearance="?android:textAppearanceMedium"
@@ -46,13 +50,22 @@
             tools:text="lutti" />
 
         <TextView
-            android:id="@+id/default_word_view"
+            android:id="@+id/default_text_view"
             android:layout_width="match_parent"
-            android:layout_height="0dp"
+            android:layout_height="44dp"
+            android:layout_below="@id/miwok_text_view"
             android:layout_weight="1"
             android:gravity="top"
             android:textAppearance="?android:textAppearanceMedium"
             android:textColor="@android:color/white"
             tools:text="one" />
-    </LinearLayout>
-</LinearLayout>
+
+        <ImageView
+            android:layout_width="36dp"
+            android:layout_height="36dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="24dp"
+            android:src="@drawable/ic_play_arrow_white_36dp" />
+    </RelativeLayout>
+</RelativeLayout>
